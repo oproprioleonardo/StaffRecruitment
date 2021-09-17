@@ -68,7 +68,7 @@ public class ButtonPatterns {
     }
 
     public Component acceptInvitation(long rId) {
-        return Button.success(ACCEPT_INVITATION + rId, "Quero proseguir");
+        return Button.success(ACCEPT_INVITATION + rId, "Quero prosseguir");
     }
 
     public Component cancelInvitation(long rId) {
