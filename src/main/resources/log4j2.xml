@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Configuration name="main" monitorInterval="60">
+<Configuration name="mstaffrecruitment">
     <Appenders>
         <Console name="STDOUT" target="SYSTEM_OUT">
             <PatternLayout>
@@ -9,32 +9,32 @@
             </PatternLayout>
         </Console>
         <RollingFile name="MyFile"
-              fileName="./botlogs/latest.log"
-              filePattern="./botlogs/%d{dd-MM-yyyy_HH-mm}.log.gz"
-              ignoreExceptions="false">
+                     fileName="./botlogs/latest.log"
+                     filePattern="./botlogs/%d{dd-MM-yyyy_HH-mm}.log.gz"
+                     ignoreExceptions="false">
             <PatternLayout>
                 <Pattern>[{%-5level} %d{yyyy-MM-dd HH:mm:ss}] [%t] %c{1} - %msg%n</Pattern>
             </PatternLayout>
             <Policies>
-                <OnStartupTriggeringPolicy />
-                <TimeBasedTriggeringPolicy />
+                <OnStartupTriggeringPolicy/>
+                <TimeBasedTriggeringPolicy/>
             </Policies>
         </RollingFile>
     </Appenders>
     <Loggers>
-        <Logger name="org.hibernate.SQL" level="info" additivity="false">
+        <Logger name="org.hibernate.SQL" level="info">
             <AppenderRef ref="STDOUT"/>
             <AppenderRef ref="MyFile"/>
         </Logger>
-        <Logger name="org.hibernate.type.descriptor.sql" level="info" additivity="false">
+        <Logger name="org.hibernate.type.descriptor.sql" level="info">
             <AppenderRef ref="STDOUT"/>
             <AppenderRef ref="MyFile"/>
         </Logger>
-        <Logger name="net.dv8tion.jda.internal.requests.Requester" level="info" additivity="false">
+        <Logger name="net.dv8tion.jda.internal.requests.Requester" level="info">
             <AppenderRef ref="STDOUT"/>
             <AppenderRef ref="MyFile"/>
         </Logger>
-        <Root level="INFO" additivity="false">
+        <Root level="info" additivity="false">
             <AppenderRef ref="STDOUT"/>
             <AppenderRef ref="MyFile"/>
         </Root>

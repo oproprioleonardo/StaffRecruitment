@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.leonardo.discord</groupId>
-    <artifactId>StaffRecruitment</artifactId>
+    <artifactId>HTools</artifactId>
     <version>1.0</version>
     <inceptionYear>2021</inceptionYear>
     <licenses>
@@ -18,7 +18,7 @@
         <developer>
             <id>LeonardoCod3r</id>
             <name>Leonardo da Silva</name>
-            <email>l.6042silva@gmail.com</email>
+            <email>oproprioleonardo@gmail.com</email>
         </developer>
     </developers>
 
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
-            <version>4.3.0_310</version>
+            <version>4.3.0_331</version>
             <exclusions>
                 <exclusion>
                     <groupId>club.minnced</groupId>
@@ -75,13 +75,13 @@
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-mysql-client</artifactId>
-            <version>4.1.0</version>
+            <version>4.2.1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>io.smallrye.reactive</groupId>
             <artifactId>mutiny</artifactId>
-            <version>1.0.0</version>
+            <version>1.1.2</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -93,7 +93,7 @@
         <dependency>
             <groupId>org.hibernate.reactive</groupId>
             <artifactId>hibernate-reactive-core</artifactId>
-            <version>1.0.0.CR9</version>
+            <version>1.1.0.Final</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -134,7 +134,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.leon.srecruit.Main</mainClass>
+                            <mainClass>com.leon.htools.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

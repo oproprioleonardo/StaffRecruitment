@@ -1,16 +1,18 @@
 {
   "adminRole": 883094108724396037,
+  "guildChannelId": 650823944005484574,
   "recruitmentGuildId": 883094108695060510,
-  "teamGuildId": 883094270725222400,
   "referenceGuildId": 849627467853332501,
   "timeToAliveInvite": 10080,
   "intervieweeRoleId": 883094108695060518,
   "verifiedRoleId": 886235988970594334,
   "channelInviteId": 883094108724396040,
-  "alrightChannelInviteId": 883094270754578461,
   "logInviteChannelId": 883488638908903445,
   "logChannelId": 883488573502926870,
   "acceptedRoleId": 886941282818224138,
+  "studiosChannelId": 882069341124845578,
+  "teamChannelId": 883094270754578461,
+  "avaliationRoleId": 890657151478030379,
   "gamemodes": [
     {
       "name": "sw",
